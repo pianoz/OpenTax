@@ -68,6 +68,8 @@ def statehandler(state, filingtuple):
         return gawithholding(filingtuple)
     if state.upper() == "OK" or state.upper() =="OKLAHOMA":
         return okwithholding(filingtuple)
+    if state.upper() == "Q" or state.upper() == "QUIT":
+        return()
     else:
         print("Input not recognized")
         return 0
